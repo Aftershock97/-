@@ -1,0 +1,119 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+li{
+    list-style-type: none;
+}
+.container{
+    margin: auto;
+    width: 700px;
+}
+.navbar{
+    background: red;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+.things_input input{
+    display: inline-block;
+    width: 80%;
+}
+.things_input{
+    width: 100%;
+    background: red;
+    margin-top: 10px;
+    border-radius:5px;
+    height: 50px;
+    outline: none; 
+}
+.things_input span{
+    display: inline-block;
+    width: 10%;
+    color: white;
+    text-align: center;
+}
+.things_input button{
+    display: inline-block;
+    width: 7%;
+    color: white;
+    margin: 0;
+    padding: 0;
+    border: 1px solid transparent; 
+    outline: none; 
+    background: red;
+}
+.things_input button:hover{
+    cursor: pointer;
+}
+.things_input span,
+.things_input button,
+.things_input input{
+    padding: 13.8px 0px;
+}
+.list_nav{
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 10px;
+}
+.list{
+    margin-top: 10px;
+}
+.list li{
+    border: 1px solid rgb(224, 224, 224);
+    padding: 10px 0px;
+    margin: 2px;
+    padding-left: 10px;
+}
+.list_btn button{
+    float: left;
+    margin-right:10px;
+    border: 1px solid transparent; 
+    outline: none; 
+    background: white;
+    color: red;
+    border-radius:10px;
+    font-size: 15px;
+}
+.list_btn button:hover{
+    cursor: pointer;
+}
+.list_btn{
+    float: right;
+}
+.desc{
+    display: block;
+    clear: both;
+    width: 100%;
+    border: 0px 1px 1px 1px solid red;
+    height: 150px;
+}
+.desc_div{
+    padding-top: 5px;
+    margin-top: 5px;
+    width: 100%;
+    border-top: 1px solid red
+}
+.desc_div span{
+    color: red;
+    margin: 0px 20px;
+}
+.float_desc{
+    position: absolute;
+    background: white;
+    width: 250px;
+    height: 130px;
+    text-align: center;
+    display: none;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+.blank{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 5px;
+}

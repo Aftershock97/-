@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>list</title>
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>   
+    <div id="app">
+        <div class="navbar">T O D O</div>
+        <div class="container">
+            <div class="things_input">
+                <span>代办事项</span>
+                <input type="text" id="things_input" v-model="things.title" @click='ip_toggle=!ip_toggle'>
+                <button @click='add_things'>添加</button>
+            </div>
+            <textarea v-if='ip_toggle' class='desc' v-model="things.desc"></textarea>
+            <input v-if='ip_toggle' type="date" v-model='things.time'>
+            <div class="things_todo">
+                <div class="list_nav">未完成</div>
+                <span class="blank" v-if="todo.done&&list.length<=0" v-for="todo in list" >暂无事件</span>
+                <ul class="list">
+                    <li v-if="!todo.done" v-for="todo in list">{{todo.title}}
+                        <div class="list_btn">
+                            <button @click='toggle_detail(todo.id)' @mouseout='mouseout' @mouseover='mouseenter(todo.id)'>显示详情</button>
+                            <button @click='finish(todo.id)'>完成</button>
+                            <button @click='fix(todo.id)'>修改</button>
+                            <button @click='remove(todo.id)'>删除</button>
+                        </div>
+                        <div v-if="todo.toggle_detail&&todo.desc" class="desc_div">{{todo.desc}}<span>|</span>{{todo.time}}</div>
+                        <div v-else-if="todo.toggle_detail" class="desc_div">暂无详情</div>
+                        <div class="float_desc">{{todo.desc}}</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="things_done">
+                <div class="list_nav">已完成</div>
+                <ul class="list">
+                        <li v-if="todo.done" v-for="todo in list">{{todo.title}}
+                            <div class="list_btn">
+                                <button @click='finish(todo.id)'>未完成</button>
+                                <button @click='remove(todo.id)'>删除</button>
+                            </div>
+                        </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="local.js"></script>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script src="todo.js"></script>
+</html>
