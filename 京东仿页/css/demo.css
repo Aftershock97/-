@@ -1,0 +1,259 @@
+*{
+	transition: background 200ms;
+	box-sizing: border-box;
+}
+body{
+	line-height: 1.7;
+	font-size: 14px;
+	color: #444;
+	background: #f5f5f5;
+	min-width:1080px;
+}
+img{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;;
+}
+ul{
+	list-style-type: none;
+}
+.container{
+	max-width: 1080px;
+	margin: 0 auto;
+	display: block;
+}
+a{
+	text-decoration: none;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clear-both::before,
+.clear-both::after
+{
+	content: "";
+	clear: both;
+	display: block;
+}
+.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10{
+	display: block;
+	position: relative;
+	min-height: 1px;
+	float: left;
+}
+.col-1{
+	width: 10%;
+}
+.col-2{
+	width: 20%;
+}
+.col-3{
+	width: 30%;
+}
+.col-4{
+	width: 40%;
+}
+.col-5{
+	width: 50%;
+}
+.col-6{
+	width: 60%;
+}
+.col-7{
+	width: 70%;
+}
+.col-8{
+	width: 80%;
+}
+.col-9{
+	width: 90%;
+}
+.col-10{
+	width: 100%;
+}
+
+
+.top-nav{
+	background: rgb(227, 228, 229);
+}
+.top-nav .item{
+	display: inline-block;
+	padding: 6px 10px;
+	color: rgb(171, 171, 171);
+}
+.top-nav .item:hover{
+	color: rgb(227, 51, 51) ;
+}
+
+.header{
+	padding: 0px 0 ;
+}
+
+.header .logo{
+	overflow: hidden;
+	box-shadow: 1px 1px 0.3px rgba(0,0,0,0.2);
+}
+.header .search_bar{
+	border: 1px solid rgb(227, 51, 51);
+	background:rgb(227, 51, 51) ;
+}
+
+.header .search_bar input,
+.header .search_bar button{
+	display: inline-block;
+	float: left;
+	border: 0px;
+	padding: 10px 0px;
+	outline: 0;
+}
+
+.header .search_bar input{
+	width: 80%;
+}
+.header .search_bar button{
+	width: 20%;
+	background:rgb(227, 51, 51) ;
+	color: white;
+}
+.header .search_bar input:focus{
+	-webkit-box-shadow: inset 0 0 1px 1px rgba(0,0,0,0.2);
+}
+.header .search_bar button:hover{
+	cursor: pointer;
+	background:rgb(216,28,28) ;
+}
+.car{
+	text-align: center;
+}
+.header .car a{
+	float: right;
+	padding: 10px;
+	background: #fff ;
+	border: 1px solid rgb(216,28,28);
+	width: 80%;
+	color: rgb(216,28,28);
+}
+.main-promote{
+	background: #bebebe;
+}
+.slide_btn_l{
+	position:absolute;
+	top: 105px;
+	left: 0px;
+	width: 20px;
+	height: 40px;
+	background: rgba(0,0,0,0.07);
+	text-align: center;
+	line-height: 42px;
+	color: #fff;
+}
+.slide_btn_r{
+	position:absolute;
+	top: 105px;
+	right: 0px;
+	width: 20px;
+	height: 40px;
+	background: rgba(0,0,0,0.07);
+	text-align: center;
+	line-height: 42px;
+	color: #fff;
+}
+.slide_btn_l:hover,
+.slide_btn_r:hover{
+	cursor: pointer;
+	background: rgba(0,0,0,0.1);
+}
+.main-promote{
+	overflow: visible;
+	position: relative;
+}
+.main-promote .cat{
+	background: white;
+	color: rgb(98, 98, 98);
+}
+.main-promote .cat .item{
+	padding: 14px 20px;
+}
+.main-promote .cat .item:hover{
+	background: rgba(0,0,0,0.1);
+	cursor: pointer;
+}
+.main-promote .info{
+	padding: 5px;
+	background: #fff;
+	color: #777;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+	height: 561px;
+}
+.main-promote .info > *{
+	margin-bottom: 10px;
+}
+.main-promote .auth{
+	line-height: 70px;
+}
+.main-promote .info .avatar{
+	background: red;
+	width: 50px;
+	height: 50px;
+	border-radius:50% ;
+	float: left;
+	margin: 10px;
+}
+.cat-promote .title{
+	display: block;
+	font-size: 30px;
+}
+.cat-promote .container div:nth-child(even){
+	background: #FF6666;
+	height: 300px;
+	border-radius: 10px;
+	padding: 5px;
+	width: 18%;
+	margin: 0 1%;
+}.sub-promote{
+	height: 268px;
+	overflow: hidden;
+}
+.cat-promote .container div:nth-child(odd){
+	background: #CCCCFF;
+	height: 300px;
+	border-radius: 10px;
+	padding: 5px;
+	width: 28%;
+	margin: 0 1%;
+}
+.footer .container div{
+	text-align: center;
+	padding: 10px;
+	border-top: #777777 1px solid;
+	margin-top: 10px;
+}
+.dis{
+	width:559px;
+	display: block;
+	background: #fff;
+	color:rgb(102, 102, 102);
+	position: absolute;
+	top: 0px;
+	left: 186.3px;
+	z-index:2;
+}
+.dis li{
+	line-height: 35px;
+	padding: 10px 0px;
+}
+.dis span{
+	padding:0px 4px;
+}
+.dis ul li span:first-child{
+	font-weight: bold;
+}
+.dis ul{
+	padding-left: 15px;
+	box-shadow:1px 1px 3px  #777777;
+	margin: 0px;
+	overflow:visible;
+} 
