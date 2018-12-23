@@ -1,0 +1,142 @@
+img{
+	max-width: 100%;
+}
+a:hover{
+	text-decoration: none;
+}
+p{
+	padding: 0px;
+	margin: 0px;
+}
+.logo{
+	width: 60px;
+	background-image: url(img/logo.png);
+	background-position: center center;
+	background-size: 60%;
+	background-repeat:no-repeat ;
+}
+.side-bar a{
+	border: 0px;
+	border-radius:3px;
+}
+.side-bar a.active{
+	background: rgb(234, 12, 60);
+}
+.m_c_img{
+	border-radius: 3px;
+	padding-top:5px;
+}
+.m_c_title a{
+	display: block;
+	margin-top: 10px;
+	color: #666;
+	font-size:18px;
+	font-weight: bold;
+}
+.m_c_title a:hover{
+	color: rgba(0,0,0,0.9);
+}
+.m_c_desc{
+	margin-top: 15px;
+}
+.m_c_desc img{
+	width: 18px;
+	border-radius: 50%;
+}
+.m_c_desc span{
+	color: rgb(119, 119, 119);
+}
+.m_c_item{
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid rgba(119, 119, 119,0.3);
+}
+.s_r_info{
+	border-radius:3px;
+	background: rgb(245, 245, 245);
+	margin-top: 15px;
+	padding: 10px;
+}
+.s_r_info_img{
+	padding-top: 10px;
+}
+.s_r_info .title{
+	font-weight: bold;
+	padding-left:5px ;
+}
+.s_r_info_text_content{
+	padding-left: 5px;
+	color: #333;
+	margin-top: 10px;
+}
+.s_r_info_text_content:hover{
+	cursor: pointer;
+}
+.s_r_info_text .content:hover{
+	background: rgba(0,0,0,0.07);
+}
+.s_r_info_text_desc{
+	padding-left: 5px;
+	color: #888;
+}
+.news_title{
+	line-height: 1.3;
+}
+.news_main span{
+	color: #999;
+}
+.news_main .label{
+	opacity: 0.8;
+}
+.news_content{
+	margin-top: 10px;
+	font-size: 16px;
+}
+.news_content img{
+	display: block;
+	width: 100%;
+}
+.info_img{
+	width: 100%;
+	margin-top: 10px;
+	border-radius:3px;
+}
+.s_r_info_text .content{
+	padding-bottom: 10px;
+}
+.s_r_info_text .content:hover{
+	cursor: pointer;
+}
+.form-container{
+	max-width: 500px;
+	margin: 0 auto;
+}
+.login_form p{
+	font-weight: bold;
+	line-height: 35px;
+	margin-bottom: -5px;
+}
+.forget{
+	margin: 10px 0px;
+	display: block;
+	cursor: pointer;
+	width:73px ;
+}
+.btn-primary {
+  background-color: #ea0c3c;
+  border-color: #ea0c3c;
+}
+.btn-primary:hover,
+.btn-primary.focus,
+.btn-primary:focus,
+.btn-primary.active, .btn-primary:active, .open>.dropdown-toggle.btn-primary,
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover {
+  background-color: #d00e38;
+  border-color: #d00e38;
+}
+.foot p{
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	color: #777;
+}
