@@ -1,0 +1,131 @@
+*{
+	background: rgba(248, 248, 248,.1);
+}
+.navbar,.header{
+	text-align: center;
+}
+
+.wrap{
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+input,textarea{
+	display: block;
+	width: 498px;
+	border: 1px solid rgb(0,0,0,0.1) ;
+	border-radius: 3px;
+	padding:5px 0px;
+	
+}
+#task-input:focus{
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 
+	inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+}
+.task-list button{
+	border:1px solid rgb(0,0,0,0.1) ;
+	border-radius: 3px;
+	padding:4px 10px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 
+	inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+	display: none;
+	margin: 2.5px 0px 2.5px 0px;
+	cursor: pointer;
+}
+
+.navbar{
+	width: auto;
+	background:red;
+	margin-top: 0px;
+}
+.navbar h1{
+	margin: 0px;
+	font-size: 25px;
+	color: white;
+	font-family: "微软雅黑";
+	padding: 13px 0px;
+}
+
+.header{
+	margin: 25px;
+	font-size: 18px;
+	color: rgb(150, 144, 139);
+}
+.item{
+	margin: 6px 0px;
+	line-height: 35px;
+	padding-left: 10px;
+	border-radius:5px ;
+}
+.item:hover{
+	background:rgba(204, 204, 153,0.5);
+}
+.btn{
+	float: right;
+	padding-top: 0px;
+	margin-right: 10px;
+}
+.task-list .item:hover button{
+	display: inline-block;
+}
+.do_bar{
+	display: block;
+	height: 35px;
+	text-align: center;
+	font-size:25px ;
+	line-height: 35px;
+	color: white;
+	background:red ;
+	font-family:"微软雅黑" ;
+	font-weight: bold;
+}
+.alert{
+	color: red;
+	font-weight: bold;
+}
+.alert:after{
+	position: relative;
+	content: "\2620";
+	font-weight: normal;
+	left: 15px;
+}
+.detail{
+	display: block;
+	border-top: 1px solid red;
+	font-family: "微软雅黑";
+}
+.detail span{
+	color: red;
+	padding: 0px 10px;
+}
+.item_img{
+    display: inline-block;
+    background: red;
+    width: 25px;
+    height: 25px;
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-right: 5px;
+    position: relative;
+    top: 0px;
+    text-align: center;
+    line-height: 26px;
+    color: white;
+}
+.item:hover{
+	cursor: pointer;
+}
+.item_msg{
+	padding-bottom: 3px;
+    position: relative;
+    top: 1px;
+    font-family: "微软雅黑";
+}
+.no_item{
+	display: block;
+	padding: 20px 0px;
+	font-family: "微软雅黑";
+	font-style: italic;
+	color: #ccc;
+	text-align: center;
+}

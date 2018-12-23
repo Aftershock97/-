@@ -1,0 +1,6 @@
+.cross{  
+	color: red;  
+}    
+.cross:after{    
+    content: "\2620"; 
+}
